@@ -1,4 +1,10 @@
-# Smithsonian Institution Barcode Network Informatics Resources
-This repository contains the Sphinx documentation source for SI Barcode Network Informatics Read the Docs page, located at [http://sibarcodenetwork.readthedocs.io/](http://sibarcodenetwork.readthedocs.io/).
+# GGI Geneious FIMS Configuration File for BiSciCol
 
-We will also host important supporting files, such as the FIMS spreadsheet template ("SI Barcoding Specimen Spreadsheet.xlsx").
+This repository contains documents related to the generation of Geneious FIMS templates via [BiSciCol](http://biscicol.org/).
+
+- **ggi_config.xml**: Contains the XML configuration file for the GGI Geneious FIMS template.
+
+- **GGI Barcoding Specimen Spreadsheet.xlsx**: Template for entering specimen/tissue data.
+
+Files were adapted from the [SI Barcode Network](https://github.com/MikeTrizna/SIBarcodeNetwork). 
+
