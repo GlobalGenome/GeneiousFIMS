@@ -51,6 +51,7 @@
         <field>extractionPlateID</field>
         <field>extractionWell</field>
       </rule>
+      <rule type="checkInXMLFields" column="extractionWell" list="plateWell" level="error"/>
       <rule type="checkInXMLFields" column="yearCollected" list="year" level="error"/>
       <rule type="checkInXMLFields" column="monthCollected" list="month" level="error"/>
       <rule type="checkInXMLFields" column="dayCollected" list="day" level="error"/>
