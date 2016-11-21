@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <fims>
-  <metadata doi="a doi" shortname="SIBarcodingCBOL" eml_location="eml_location" target="http://data.biscicol.org/ds/data" queryTarget="http://data.biscicol.org/ds"><![CDATA[Fill this in later.]]></metadata>
+  <metadata doi="a doi" shortname="GGIBarcoding" eml_location="eml_location" target="http://data.biscicol.org/ds/data" queryTarget="http://data.biscicol.org/ds"><![CDATA[Fill this in later.]]></metadata>
   <mapping>
     <entity worksheet="Samples" worksheetUniqueKey="tissueID" conceptAlias="Resource" conceptURI="http://www.w3.org/2000/01/rdf-schema#Resource" entityID="1">
       <attribute column="projectID" uri="urn:projectID"><![CDATA[The name of the overarching project that the samples fall under. Free text field, may be left blank.]]></attribute>
