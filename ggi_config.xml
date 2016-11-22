@@ -45,12 +45,14 @@
         <field>countryOrOcean</field>
         <field>voucherID</field>
         <field>tissueID</field>
-        <field>institutionCode</field>
-        <field>catalogNumber</field>
-        <field>scientificName</field>
         <field>kingdom</field>
         <field>extractionPlateID</field>
         <field>extractionWell</field>
+      </rule>
+      <rule type="RequiredColumns" column="RequiredColumns" level="warning">
+        <field>institutionCode</field>
+        <field>catalogNumber</field>
+        <field>scientificName</field>
       </rule>
       <rule type="checkInXMLFields" column="extractionWell" list="plateWell" level="error"/>
       <rule type="checkInXMLFields" column="yearCollected" list="year" level="error"/>
