@@ -43,7 +43,6 @@
       <rule type="uniqueValue" column="tissueID" level="error"/>
       <rule type="RequiredColumns" column="RequiredColumns" level="error">
         <field>countryOrOcean</field>
-        <field>voucherID</field>
         <field>tissueID</field>
         <field>kingdom</field>
         <field>extractionPlateID</field>
@@ -52,6 +51,7 @@
       <rule type="RequiredColumns" column="RequiredColumns" level="warning">
         <field>institutionCode</field>
         <field>catalogNumber</field>
+        <field>voucherID</field>
         <field>scientificName</field>
       </rule>
       <rule type="checkInXMLFields" column="extractionWell" list="plateWell" level="error"/>
