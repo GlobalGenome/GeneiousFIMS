@@ -15,13 +15,11 @@
       <attribute column="catalogNumber" uri="urn:catalogNumber" defined_by="http://rs.tdwg.org/dwc/terms/catalogNumber"><![CDATA[An identifier (preferably unique) for the record within the data set or collection.]]></attribute>
       <attribute column="scientificName" uri="urn:scientificName" defined_by="http://rs.tdwg.org/dwc/terms/scientificName"><![CDATA[The full scientific name, with authorship and date information if known. When forming part of an Identification, this should be the name in lowest level taxonomic rank that can be determined.]]></attribute>
       <attribute column="countryOrOcean" uri="urn:countryOrOcean" defined_by="http://rs.tdwg.org/dwc/terms/country"><![CDATA[The country or water body from which the specimen voucher was collected. This field will be validated against the INSDC country list (http://www.insdc.org/country.html).]]></attribute>
-      <attribute column="stateProvince" uri="urn:stateProvince" defined_by="http://rs.tdwg.org/dwc/terms/stateProvince"><![CDATA[The state or province from which the specimen voucher was collected.]]></attribute>
-      <attribute column="countyOrMunicipality" uri="urn:countryOrOcean" defined_by="http://rs.tdwg.org/dwc/terms/county"><![CDATA[The county or municipality from which the specimen voucher was collected.]]></attribute>
       <attribute column="locality" uri="urn:locality" defined_by="http://rs.tdwg.org/dwc/terms/locality"><![CDATA[The specific description of the place. Less specific geographic information can be provided in other geographic terms (higherGeography, continent, country, stateProvince, county, municipality, waterBody, island, islandGroup). This term may contain information modified from the original to correct perceived errors or standardize the description.]]></attribute>
       <attribute column="decimalLatitude" uri="urn:decimalLatitude" defined_by="http://rs.tdwg.org/dwc/terms/decimalLatitude"><![CDATA[The geographic latitude,in decimal degrees of the geographic center of a Location. Positive values are north of the Equator, negative values are south of it. This field will be validated to being within the range -90.0 to 90.0.]]></attribute>
       <attribute column="decimalLongitude" uri="urn:decimalLongitude" defined_by="http://rs.tdwg.org/dwc/terms/decimalLongitude"><![CDATA[The geographic longitude,in decimal degrees of the geographic center of a Location. Positive values are east of the Greenwich Meridian, negative values are west of it. This field will be validated to being within the range -180.0 to 180.0.]]></attribute>
       <attribute column="yearCollected" uri="urn:yearCollected" defined_by="http://rs.tdwg.org/dwc/terms/year"><![CDATA[The four-digit year in which the voucher was collected, according to the Common Era Calendar.]]></attribute>
-      <attribute column="monthCollected" uri="urn:monthCollected" defined_by="http://rs.tdwg.org/dwc/terms/month"><![CDATA[The month in which the voucher was collected. This should be entered as a three-letter abbreviation, with the first letter capitalized (e.g. Jan, Mar, Jul).]]></attribute>
+      <attribute column="monthCollected" uri="urn:monthCollected" defined_by="http://rs.tdwg.org/dwc/terms/month"><![CDATA[The two-digit numerical month in which the voucher was collected. This will be validated to being in the range from 1 to 12.]]></attribute>
       <attribute column="dayCollected" uri="urn:dayCollected" defined_by="http://rs.tdwg.org/dwc/terms/day"><![CDATA[The integer day of the month on which the voucher was collected.]]></attribute>
       <attribute column="collectedBy" uri="urn:collectedBy" defined_by="http://rs.tdwg.org/dwc/terms/recordedBy"><![CDATA[A list (concatenated and separated by semicolons) of names of people, groups, or organizations responsible for collecting the specimen voucher. The primary collector or observer, especially one who applies a personal identifier (recordNumber), should be listed first. The name format should be Given Name, [space], Last Name.]]></attribute>
       <attribute column="fieldNumber" uri="urn:fieldNumber"><![CDATA[The number given to the voucher specimen/tissue sample in the field, prior to assignment of an official catalog number. Often in the format "AMD-123" or "USNMFS12345".]]></attribute>
@@ -35,7 +33,7 @@
       <attribute column="species" uri="urn:species" defined_by="http://rs.tdwg.org/dwc/terms/specificEpithet"><![CDATA[The name of the first or species epithet of the scientificName of the specimen voucher.]]></attribute>
       <attribute column="subspecies" uri="urn:subspecies" defined_by="http://rs.tdwg.org/dwc/terms/infraspecificEpithet"><![CDATA[The name of the lowest or terminal infraspecific epithet of the scientificName of the specimen voucher, excluding any rank designation.]]></attribute>
       <attribute column="gb_lat_lon" uri="urn:gbLatLon" defined_by="http://rs.tdwg.org/dwc/terms/verbatimCoordinates"><![CDATA[The GenBank-formatted concatenation of latitude and longitude fields.]]></attribute>
-      <attribute column="gb_country" uri="urn:gbCountry" defined_by="http://rs.tdwg.org/dwc/terms/verbatimLocality"><![CDATA[The concatenation of countryOrOcean, stateProvince, countyOrMunicipality, and locality fields for GenBank submission.]]></attribute>
+      <attribute column="gb_country" uri="urn:gbCountry" defined_by="http://rs.tdwg.org/dwc/terms/verbatimLocality"><![CDATA[The concatenation of locality and countryOrOcean fields for GenBank submission.]]></attribute>
       <attribute column="gb_collection_date" uri="urn:gbCollectionDate" defined_by="http://rs.tdwg.org/dwc/terms/verbatimEventDate"><![CDATA[Putting together the various collection data fields (or lack of them) into the format that GenBank requires.]]></attribute>
     </entity>
   </mapping>
@@ -596,18 +594,18 @@
         <field>2050</field>
       </list>
       <list alias="month">
-        <field>Jan</field>
-        <field>Feb</field>
-        <field>Mar</field>
-        <field>Apr</field>
-        <field>May</field>
-        <field>Jun</field>
-        <field>Jul</field>
-        <field>Aug</field>
-        <field>Sep</field>
-        <field>Oct</field>
-        <field>Nov</field>
-        <field>Dec</field>
+        <field>1</field>
+        <field>2</field>
+        <field>3</field>
+        <field>4</field>
+        <field>5</field>
+        <field>6</field>
+        <field>7</field>
+        <field>8</field>
+        <field>9</field>
+        <field>10</field>
+        <field>11</field>
+        <field>12</field>
       </list>
       <list alias="day">
         <field>1</field>
