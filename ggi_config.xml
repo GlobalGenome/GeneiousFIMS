@@ -609,6 +609,18 @@
         <field>Oct</field>
         <field>Nov</field>
         <field>Dec</field>
+        <field>1</field>
+        <field>2</field>
+        <field>3</field>
+        <field>4</field>
+        <field>5</field>
+        <field>6</field>
+        <field>7</field>
+        <field>8</field>
+        <field>9</field>
+        <field>10</field>
+        <field>11</field>
+        <field>12</field>
       </list>
       <list alias="day">
         <field>1</field>
